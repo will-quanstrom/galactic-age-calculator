@@ -29,4 +29,9 @@ describe('User', () => {
     let inputUser = new User(20, 'male', 'unhealthy', 'sierraLeone');
     expect(inputUser.earthExpectancy()).toEqual(44.3);
   });
+  test('should correctly give the average amount of time left in users life', () => {
+    let inputUser = new User(20, 'male', 'healthy', 'america');
+    expect(inputUser.timeLeft()).toEqual(59.7);
+  });
+  
 });
