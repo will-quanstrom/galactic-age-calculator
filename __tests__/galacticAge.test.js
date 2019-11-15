@@ -17,8 +17,16 @@ describe('User', () => {
     let inputUser = new User(100, 'male', 'healthy', 'america');
     expect(inputUser.jupiterAge()).toEqual(1186);
   });
-  test('should correctly give users life expectancy on Earth', () => {
-    var inputUser = new User(20, 'male', 'healthy', 'america');
+  test('should correctly give users life expectancy in America', () => {
+    let inputUser = new User(20, 'male', 'healthy', 'america');
+    expect(inputUser.earthExpectancy()).toEqual(81);
+  });
+  test('should correctly give users life expectancy in Canada', () => {
+    let inputUser = new User(20, 'male', 'healthy', 'america');
+    expect(inputUser.earthExpectancy()).toEqual(81);
+  });
+  test('should correctly give users life expectancy in Sierra Leone', () => {
+    let inputUser = new User(20, 'male', 'healthy', 'america');
     expect(inputUser.earthExpectancy()).toEqual(81);
   });
 });

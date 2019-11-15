@@ -22,7 +22,11 @@ User.prototype.jupiterAge = function () {
 }
 
 User.prototype.earthExpectancy = function () {
-
+  if(this.gender == 'male'){
+    let life = 76;
+  } else if(this.gender == 'female'){
+    let life = 81;
+  }
 }
 
 User.prototype.mercuryExpectancy = function () {
