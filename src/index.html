@@ -18,17 +18,24 @@
           <div class="form-group">
             <input type="text" value="What is your age now?" id="gone"><br>
             <label for="">What is your gender?</label>
-            <select class="form-control" name="Gender">
+            <select class="form-control" name="Gender" id="gender">
               <option value=""></option>
-              <option value="">male</option>
-              <option value="">female</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select><br>
+            <label for="">How would you describe you current lifestyle?</label>
+            <select class="form-control" name="lifestyle" id="lifestyle">
+              <option value=""></option>
+              <option value="unhealthy">unhealthy</option>
+              <option value="average">average</option>
+              <option value="healthy">healthy</option>
             </select><br>
             <label for="">What country are you from?</label>
-            <select class="form-control" name="location">
+            <select class="form-control" name="location" id="location">
               <option value=""></option>
-              <option value="">America</option>
-              <option value="">Japan</option>
-              <option value="">Sierra Leone</option>
+              <option value="america">America</option>
+              <option value="japan">Japan</option>
+              <option value="sierraLeone">Sierra Leone</option>
             </select>
           </div>
           <button type="submit" class="btn">Submit</button>
@@ -48,7 +55,23 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div id="planetRow" class="row">
+        <div class="col-md-3">
+          <img class="planets" src="https://cdn.images.express.co.uk/img/dynamic/130/590x/secondary/mercury-retrograde-meaning-astrology-what-is-mercury-retrograde-what-does-mercury-retrograde-mean-1950487.jpg?r=1562823197671" alt="">
+          <p id="mercury"></p>
+        </div>
+        <div class="col-md-3">
+          <img class="planets" src="https://cdn.mos.cms.futurecdn.net/dzxtQ2dXH9SVKztJTbAXSA.jpg" alt="">
+          <p id="venus"></p>
+        </div>
+        <div class="col-md-3">
+          <img class="planets" src="https://thenypost.files.wordpress.com/2018/12/mars.jpg?quality=90&strip=all&w=618&h=410&crop=1" alt="">
+          <p id="mars"></p>
+        </div>
+        <div class="col-md-3">
+          <img class="planets" src="https://cdn.images.express.co.uk/img/dynamic/151/590x/jupiter-828348.jpg" alt="">
+          <p id="jupiter"></p>
+        </div>
 
       </div>
     </div>
