@@ -33,5 +33,13 @@ describe('User', () => {
     let inputUser = new User(20, 'male', 'healthy', 'america');
     expect(inputUser.timeLeft()).toEqual(59.7);
   });
-  
+  test('should correctly give the average amount of time left in users life', () => {
+    let inputUser = new User(20, 'female', 'unhealthy', 'japan');
+    expect(inputUser.timeLeft()).toEqual(61.8);
+  });
+  test('should correctly give the average amount of time left in users life', () => {
+    let inputUser = new User(20, 'female', 'healthy', 'sierraLeone');
+    expect(inputUser.timeLeft()).toEqual(35.8);
+  });
+
 });

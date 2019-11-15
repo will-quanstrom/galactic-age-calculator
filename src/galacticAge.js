@@ -80,7 +80,7 @@ User.prototype.earthExpectancy = function () {
 }
 
 User.prototype.timeLeft = function () {
-  // return this.earthExpectancy() - this.age;
+  return this.earthExpectancy() - this.age;
 }
 
 User.prototype.mercuryExpectancy = function () {
