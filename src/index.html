@@ -5,6 +5,52 @@
     <title>Super Galactic Age Calculator</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>The Super Galactic Age Calculator!</h1>
+      <hr class="my-4">
+      <p class="lead">Thinking about relocating to a new home in the solar stystem?</p>
+      <p>Find out how many years you'll live on your new home!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+       <div class="col-md-6">
+        <form class="userInput">
+          <div class="form-group">
+            <input type="text" value="What is your age now?" id="gone"><br>
+            <label for="">What is your gender?</label>
+            <select class="form-control" name="Gender">
+              <option value=""></option>
+              <option value="">male</option>
+              <option value="">female</option>
+            </select><br>
+            <label for="">What country are you from?</label>
+            <select class="form-control" name="location">
+              <option value=""></option>
+              <option value="">America</option>
+              <option value="">Japan</option>
+              <option value="">Sierra Leone</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+         <img id="earth" src="https://solarsystem.nasa.gov/system/downloadable_items/548_slow_spin.5542_print.jpg" alt="planet earth">
+         <p id="earthTime"></p>
+        </div>
+     </div>
+    </div>
+    <div class="container">
+      <div class="load">
+        <h5>Calculating. . .</h5>
+        <div id="myBar" class="w3-container w3-green" style="height:24px;width:1%"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
 
+      </div>
+    </div>
   </body>
 </html>
