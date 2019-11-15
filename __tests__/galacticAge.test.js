@@ -19,14 +19,14 @@ describe('User', () => {
   });
   test('should correctly give users life expectancy in America', () => {
     let inputUser = new User(20, 'male', 'healthy', 'america');
-    expect(inputUser.earthExpectancy()).toEqual(81);
+    expect(inputUser.earthExpectancy()).toEqual(79.7);
   });
-  test('should correctly give users life expectancy in Canada', () => {
-    let inputUser = new User(20, 'male', 'healthy', 'america');
-    expect(inputUser.earthExpectancy()).toEqual(81);
+  test('should correctly give users life expectancy in Japan', () => {
+    let inputUser = new User(20, 'female', 'average', 'japan');
+    expect(inputUser.earthExpectancy()).toEqual(86.8);
   });
   test('should correctly give users life expectancy in Sierra Leone', () => {
-    let inputUser = new User(20, 'male', 'healthy', 'america');
-    expect(inputUser.earthExpectancy()).toEqual(81);
+    let inputUser = new User(20, 'male', 'unhealthy', 'sierraLeone');
+    expect(inputUser.earthExpectancy()).toEqual(44.3);
   });
 });

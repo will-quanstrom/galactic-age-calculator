@@ -22,11 +22,62 @@ User.prototype.jupiterAge = function () {
 }
 
 User.prototype.earthExpectancy = function () {
-  if(this.gender == 'male'){
-    let life = 76;
-  } else if(this.gender == 'female'){
-    let life = 81;
+  let life = 0;
+  if(this.residence == 'america'){
+    if(this.gender == 'male'){
+      life = 74.7;
+      if(this.lifestyle == 'healthy'){
+        life += 5;
+      } else if(this.lifestyle == 'unhealthy'){
+        life -=5;
+      }
+    } else if(this.gender == 'female'){
+      life = 81.1;
+      if(this.lifestyle == 'healthy'){
+        life += 5;
+      } else if(this.lifestyle == 'unhealthy'){
+        life -=5;
+      }
+    }
+    return life;
   }
+  else if(this.residence == 'japan'){
+    if(this.gender == 'male'){
+      life = 80.5;
+      if(this.lifestyle == 'healthy'){
+        life += 5;
+      } else if(this.lifestyle == 'unhealthy'){
+        life -=5;
+      }
+    } else if(this.gender == 'female'){
+      life = 86.8;
+      if(this.lifestyle == 'healthy'){
+        life += 5;
+      } else if(this.lifestyle == 'unhealthy'){
+        life -=5;
+      }
+    }
+    return life;
+  }
+  else if(this.residence == 'sierraLeone'){
+    if(this.gender == 'male'){
+      life = 49.3;
+      if(this.lifestyle == 'healthy'){
+        life += 5;
+      } else if(this.lifestyle == 'unhealthy'){
+        life -=5;
+      }
+    } else if(this.gender == 'female'){
+      life = 50.8;
+      if(this.lifestyle == 'healthy'){
+        life += 5;
+      } else if(this.lifestyle == 'unhealthy'){
+        life -=5;
+      }
+    }
+    return life;
+  }
+
 }
 
 User.prototype.mercuryExpectancy = function () {
