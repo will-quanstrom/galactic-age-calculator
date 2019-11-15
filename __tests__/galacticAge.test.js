@@ -14,4 +14,8 @@ describe('User', () => {
     var inputUser = new User(100, 'male', 'healthy', 'america');
     expect(inputUser.marsAge()).toEqual('188');
   });
+  test('should correctly give users age on Jupiter', () => {
+    var inputUser = new User(100, 'male', 'healthy', 'america');
+    expect(inputUser.jupiterAge()).toEqual('1186');
+  });
 });
