@@ -21,6 +21,10 @@ User.prototype.jupiterAge = function () {
   return this.age * 11.86;
 }
 
+User.prototype.earthExpectancy = function () {
+
+}
+
 User.prototype.mercuryExpectancy = function () {
 
 }
