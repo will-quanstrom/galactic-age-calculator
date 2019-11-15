@@ -84,17 +84,18 @@ User.prototype.timeLeft = function () {
 }
 
 User.prototype.mercuryExpectancy = function () {
+  return Math.round(this.timeLeft() / .24 * 100) / 100;
 
 }
 
 User.prototype.venusExpectancy = function () {
-
+  return Math.round(this.timeLeft() / .62 * 100) / 100;
 }
 
 User.prototype.marsExpectancy = function () {
-
+  return Math.round(this.timeLeft() / 1.88 * 100) / 100;
 }
 
 User.prototype.jupiterExpectancy = function () {
-
+  return Math.round(this.timeLeft() / 11.86 * 100) / 100;
 }
