@@ -42,4 +42,21 @@ describe('User', () => {
     expect(inputUser.timeLeft()).toEqual(35.8);
   });
 
+  test('should correctly give the average amount of time left in users life on Mercury', () => {
+    let inputUser = new User(20, 'female', 'healthy', 'sierraLeone');
+    expect(inputUser.mercuryExpectancy()).toEqual(149.17);
+  });
+  test('should correctly give the average amount of time left in users life on Venus', () => {
+    let inputUser = new User(20, 'female', 'healthy', 'sierraLeone');
+    expect(inputUser.venusExpectancy()).toEqual(57.74);
+  });
+  test('should correctly give the average amount of time left in users life on Mars', () => {
+    let inputUser = new User(20, 'female', 'healthy', 'sierraLeone');
+    expect(inputUser.marsExpectancy()).toEqual(19.04);
+  });
+  test('should correctly give the average amount of time left in users life on Jupiter', () => {
+    let inputUser = new User(20, 'female', 'healthy', 'sierraLeone');
+    expect(inputUser.jupiterExpectancy()).toEqual(3.02);
+  });
+
 });
