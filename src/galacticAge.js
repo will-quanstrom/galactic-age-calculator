@@ -1,27 +1,28 @@
-export function User(age, gender, lifestyle, residence) {
-  this.age = age,
-  this.gender = gender,
-  this.lifestyle = lifestyle,
-  this.residence = residence
+export class User {
+constructor(age, gender, lifestyle, residence) {
+  this.age = age;
+  this.gender = gender;
+  this.lifestyle = lifestyle;
+  this.residence = residence;
 }
 
-User.prototype.mercuryAge = function () {
+mercuryAge() {
   return this.age / .24;
 }
 
-User.prototype.venusAge = function () {
+venusAge() {
   return this.age / .62;
 }
 
-User.prototype.marsAge = function () {
+marsAge() {
   return this.age / 1.88;
 }
 
-User.prototype.jupiterAge = function () {
+jupiterAge() {
   return this.age / 11.86;
 }
 
-User.prototype.earthExpectancy = function () {
+earthExpectancy() {
   let life = 0;
   if(this.residence == 'america'){
     if(this.gender == 'male'){
@@ -79,23 +80,24 @@ User.prototype.earthExpectancy = function () {
   }
 }
 
-User.prototype.timeLeft = function () {
+timeLeft() {
   return this.earthExpectancy() - this.age;
 }
 
-User.prototype.mercuryExpectancy = function () {
+mercuryExpectancy() {
   return Math.round(this.timeLeft() / .24 * 100) / 100;
 
 }
 
-User.prototype.venusExpectancy = function () {
+venusExpectancy() {
   return Math.round(this.timeLeft() / .62 * 100) / 100;
 }
 
-User.prototype.marsExpectancy = function () {
+marsExpectancy() {
   return Math.round(this.timeLeft() / 1.88 * 100) / 100;
 }
 
-User.prototype.jupiterExpectancy = function () {
+jupiterExpectancy() {
   return Math.round(this.timeLeft() / 11.86 * 100) / 100;
+}
 }

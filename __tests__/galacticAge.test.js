@@ -3,19 +3,19 @@ import { User } from './../src/galacticAge.js'
 describe('User', () => {
   test('should correctly give users age on Mercury', () => {
     let inputUser = new User(100, 'male', 'healthy', 'america');
-    expect(inputUser.mercuryAge()).toEqual(24);
+    expect(inputUser.mercuryAge()).toEqual(416 + 2/3);
   });
   test('should correctly give users age on Venus', () => {
     let inputUser = new User(100, 'male', 'healthy', 'america');
-    expect(inputUser.venusAge()).toEqual(62);
+    expect(inputUser.venusAge()).toEqual(161 + 9/31);
   });
   test('should correctly give users age on Mars', () => {
     let inputUser = new User(100, 'male', 'healthy', 'america');
-    expect(inputUser.marsAge()).toEqual(188);
+    expect(inputUser.marsAge()).toEqual(53.19148936170213);
   });
   test('should correctly give users age on Jupiter', () => {
     let inputUser = new User(100, 'male', 'healthy', 'america');
-    expect(inputUser.jupiterAge()).toEqual(1186);
+    expect(inputUser.jupiterAge()).toEqual(8 + 256/593);
   });
   test('should correctly give users life expectancy in America', () => {
     let inputUser = new User(20, 'male', 'healthy', 'america');
